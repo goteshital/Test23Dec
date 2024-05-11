@@ -67,9 +67,10 @@ public class VerifyAllElentsOnHomepageAreClickableOrNot extends Base {
 	}
 	@BeforeMethod 
 	public void beforeMehtod() {
+		System.out.println("Before method");
 		driver.get("https://www.facebook.com/login/");
 		logInOrSignPage.sendUserName("9604419850");
-		logInOrSignPage.sendPassword("Vijay@0708");
+		logInOrSignPage.sendPassword("shital@0708");
 		logInOrSignPage.clickOnLoginButton();
 
 
