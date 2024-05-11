@@ -54,7 +54,7 @@ public class VerifyAllElentsOnHomepageAreClickableOrNot extends Base {
 
 	@BeforeClass
 	public void beforeClass() {
-		System.out.println("beforeClass");
+		System.out.println("beforeClassMethod");
 		logInOrSignPage=new LogInOrSignPage(driver);
 		homePage=new HomePage(driver);
 		friendRequestsPage=new FriendsRequestPage(driver);
@@ -70,7 +70,7 @@ public class VerifyAllElentsOnHomepageAreClickableOrNot extends Base {
 		System.out.println("Before method");
 		driver.get("https://www.facebook.com/login/");
 		logInOrSignPage.sendUserName("9604419850");
-		logInOrSignPage.sendPassword("shital@0708");
+		logInOrSignPage.sendPassword("shital@12345");
 		logInOrSignPage.clickOnLoginButton();
 
 
